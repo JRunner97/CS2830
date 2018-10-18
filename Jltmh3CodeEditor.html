@@ -1,0 +1,82 @@
+<!DOCTYPE  html>
+
+<html lang="en">
+    <head>
+        <!--
+            name:       Joshua Thompson
+            pawprint:   jltmh3
+            date:       09/27/2018
+        -->
+    
+        <title id="title">Code Editor</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Styles/Jltmh3CodeEditor.css">
+        <script src="Scripts/Jltmh3CodeEditor.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="Styles/myStyle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Scripts/myScript.js"></script>
+        
+        <style id="dynamicStyles"></style>
+    </head>
+
+    <body>
+        
+        <div class="navbar">
+            <a href="index.html"><img src="https://engineering.missouri.edu//wp-content/themes/g5plus-orion/assets/images/missouri-logo.svg" alt=""></a>
+            <button class="fas fa-bars slide-toggle"></button>
+        </div>
+        
+
+        <div class="sidebar">
+            <div class="sidebar-content">
+            
+                <a href="Challenge1.html"><h3>Challenge 1</h3></a>
+                <hr>
+                <a href="Jltmh3SettingUp.html"><h3>Challenge 2</h3></a>
+                <hr>
+                <a href="Challenge3.html"><h3>Challenge 3</h3></a>
+                <hr>
+                <a href="Jltmh3Tables.html"><h3>Challenge 4</h3></a>
+                <hr>
+                <a href="Jltmh3CodeEditor.html"><h3>Challenge 6</h3></a>
+                <hr>
+                <a href="index.html"><h3>Challenge 7</h3></a>
+
+                
+            </div>
+        </div>
+        
+        <div class="sidebarOverlay"></div>
+        
+        
+        <div id="textEditrContent">
+        
+            <h1 id="header" ondblclick="headerDoubleClick()">Code Editor</h1>
+
+            <div class="columns group">
+
+                <div id="left">
+                    <textarea id="cssBox" rows="18" cols="55" placeholder="CSS..." onblur="cssLeave()" onfocus="cssClick()" ondblclick="cssDoubleClick()"></textarea>
+                    <textarea id="htmlBox" rows="18" cols=55 placeholder="HTML..." onblur="htmlLeave()" onfocus="htmlClick()" onclick="htmlClick()" ondblclick="htmlDoubleClick()"></textarea>
+                </div>
+
+                <div id="previewBox">
+                </div>
+
+            </div>
+            <div class="columns group">
+                <div id="buttonGroup">
+                    <button id="launchButton" type="button" onclick="launchClicked()">Launch</button>
+                    <button id="clearButton" type="button" onclick="clearClicked()">Clear</button>
+                    <button id="toggleButton" type="button" onclick="toggleClicked()">Toggle</button>
+                </div>
+                <div id="footerHeading">
+                    <h2>By: SpaceDandy</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

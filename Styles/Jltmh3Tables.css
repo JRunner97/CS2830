@@ -1,0 +1,77 @@
+@font-face {
+        font-family: Permanent-Font;
+        src: url(Permanent_Marker/PermanentMarker-Regular.ttf);
+    }
+body#moveTableBody h1 {
+    font-size: 2.5em;
+}
+
+body#moveTableBody h2 {
+    font-size: 1.5em;
+}
+
+body#moveTableBody h1, h2 {
+    font-family: Permanent-Font, cursive, sans-serif;
+    text-align: center;
+}
+
+body#moveTableBody div#headerBox {
+    margin: auto;
+    width: 50vw;
+    border: 6px dotted purple;
+}
+
+body#moveTableBody table, td, th {
+    border: 2px solid black;
+}
+
+body#moveTableBody table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+body#moveTableBody td.poster {
+    width: 120px;
+    background-color: black;
+}
+
+body#moveTableBody tr {
+    height: 10vh;
+}
+
+body#moveTableBody .left-title-box {
+    padding-left: 10px;
+    text-align: left;
+    border-right: none;
+    width: 50%;
+    background-color: antiquewhite;
+    color: rebeccapurple;
+}
+
+body#moveTableBody .right-title-box {
+    padding-right: 10px;
+    text-align: right;
+    border-left: none;
+    width: 50%;
+    background-color: antiquewhite;
+    color: rebeccapurple;
+}
+
+body#moveTableBody td {
+    font-size: 20px;
+    background-color: #dcd7fa;
+}
+
+body#moveTableBody .movie-times {
+    text-align: center;
+}
+
+body#moveTableBody .movie-rating {
+    color: crimson;
+}
+
+* {
+    font-family:  "Arial", "Helvetica", "Sans-serif";
+}

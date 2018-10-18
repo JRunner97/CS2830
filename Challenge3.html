@@ -1,0 +1,161 @@
+<!DOCTYPE  html>
+<html lang="en">
+
+    <head>
+        
+        <!--
+            name:       Joshua Thompson
+            pawprint:   jltmh3
+            date:       09/06/2018
+        -->
+    
+        <title>Challenge #3</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="Styles/myStyle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Scripts/myScript.js"></script>
+        
+        <style>
+            body{
+                font-family: "comic sans ms"; 
+            }
+            
+            #container {
+                width: 1095px;
+                border: 20px dashed purple; 
+                border-radius: 50px;
+                padding: 20px 50px;
+                height: 500px;
+                margin: auto;
+                
+            }
+            /*container and column styling help was taken from in-class code & notes*/
+            .column {
+                float: left;
+                padding: 20px;
+                margin: 15px;
+                border: 10px dashed lightgrey;
+                border-radius: 70px 30px;
+                text-align: justify; 
+                text-indent: 20px;   
+            }
+            
+            .clear:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            #heading {
+                text-align: center; 
+                column-span: all;
+            }
+            
+            #left-column {
+                width: 245px;
+                background-color: antiquewhite;
+            }
+            
+            #middle-column {
+                width: 205px;
+                background-color:beige
+            }
+            
+            #right-column {
+                width: 375px;
+                background-color: azure;
+            }
+            
+            #right-column pre {
+                font-size: 5.5px;
+            }
+            
+            body h2 {
+                text-align: center;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <div class="navbar">
+            <a href="index.html"><img src="https://engineering.missouri.edu//wp-content/themes/g5plus-orion/assets/images/missouri-logo.svg" alt=""></a>
+            <button class="fas fa-bars slide-toggle"></button>
+        </div>
+        
+
+        <div class="sidebar">
+            <div class="sidebar-content">
+            
+                <a href="Challenge1.html"><h3>Challenge 1</h3></a>
+                <hr>
+                <a href="Jltmh3SettingUp.html"><h3>Challenge 2</h3></a>
+                <hr>
+                <a href="Challenge3.html"><h3>Challenge 3</h3></a>
+                <hr>
+                <a href="Jltmh3Tables.html"><h3>Challenge 4</h3></a>
+                <hr>
+                <a href="Jltmh3CodeEditor.html"><h3>Challenge 6</h3></a>
+                <hr>
+                <a href="index.html"><h3>Challenge 7</h3></a>
+
+                
+            </div>
+        </div>
+        
+        <div class="sidebarOverlay"></div>
+        
+        <div id="container">   <!--START OF CONTAINER-->
+            
+            <h1 id="heading">CS2830 – Multi- Column Layout</h1>
+            
+            <div id="left-column" class="column">
+                Lorem ipsum dolor amet sriracha lo-fi PBR&B scenester banh mi. Hammock cray XOXO subway tile selvage velit you probably haven't heard of them art party. Coloring book portland vinyl blue bottle, post-ironic DIY try-hard mixtape taxidermy mollit knausgaard pour-over. Retro umami typewriter sriracha meh.
+            </div><!--END OF LEFT COLUMN-->
+            <div id="middle-column" class="column">
+                Lorem ipsum dolor amet sriracha lo-fi PBR&B scenester banh mi. Hammock cray XOXO subway tile selvage velit you probably haven't heard of them art party. Coloring book portland vinyl blue bottle, post-ironic DIY try-hard mixtape taxidermy mollit knausgaard pour-over. Retro umami typewriter sriracha meh.
+            </div><!--END OF MIDDLE COLUMN-->
+            <div id="right-column" class="column">
+                <pre>
+    Left Column Physical Width:                             Middle Column Physical Width:
+
+    245px   Content Width                                       205px   Content Width
++   40px    Padding Width (20px left, 20px right)           +   40px    Padding Width (20px left, 20px right)
++   30px    Margin  Width (15px left, 15px right)           +   30px    Margin  Width (15px left, 15px right)
++   20px    Border  Width (10px left, 10px right)           +   20px    Border  Width (10px left, 10px right)
+--------------------------------------------------          -------------------------------------------------
+    335px per column                                            295px per column
+               
+               
+               
+    Wrapper Content Width:                             
+
+    335px   Left   Column                                     
++   295px   Middle Column        
++   ?       Right  Column                
+-------------------------------------------------- 
+    1095px per column
+                
+             
+                
+left + middle + right = wrapper
+335px + 295px + right = 1095px
+right = 465px Physical Width
+                
+       
+                
+content width + padding + margin + border = physical width
+right content width + 40px + 30px + 20px = 465px
+right content width = 375px
+                </pre> <!--END OF RIGHT COLUMN-->
+            </div>
+        </div>  <!--END OF CONTAINER-->
+        
+        <h2>Created By: Joshua Thompson</h2>
+    
+    </body>
+</html>
